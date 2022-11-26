@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ-Accordian</title>
+    <link rel="stylesheet" href="./output.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+
+</head>
+<body class=" flex justify-center items-center text-[#787887] bg-gradient-to-b from-[#af67e9]  to-[#6565e7] h-screen">
+    <div class="h-3/4 w-[65vw] bg-white rounded-xl mx-auto flex flex-row overflow-hidden">
+        <div class="bg-[url('./images/bg-pattern-desktop.svg')] bg-[right_center] bg-contain flex-1">
+            <img class="inline absolute top-[18.3rem] left-[9rem] z-10 dabba" src="./images/illustration-box-desktop.svg" alt=""><img class=" w-[49rem] pt-[6rem] translate-x-[-3rem]" src="./images/illustration-woman-online-desktop.svg" alt=""> 
+        
+        </div>
+        <div class="p-3 flex-1 pl-9 flex flex-col info">
+            <h1 class="text-black mt-16 mb-6 text-3xl font-semibold">FAQ</h1>
+            <div class="w-[80%] ">
+            <div class="mb-2 hover:text-[#f47c57] flex flex-row justify-between items-center my-5"><p class="inline-block text-sm">How many team members can I invite? 
+            </p>  <img class="inline ml-1 cursor-pointer" src="./images/icon-arrow-down.svg" onClick="toggleVisiblity(1)" alt="">
+            </div>
+            <p id="1" class="hide text-xs my-3 hidden">You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan</p>
+            <hr>
+            </div>
+            <div class="w-[80%] ">
+            <div class="mb-2 hover:text-[#f47c57] flex flex-row justify-between items-center my-5"><p class="inline-block text-sm">What is the maximum file upload size? 
+            </p>  <img class="inline ml-1 cursor-pointer" src="./images/icon-arrow-down.svg" onClick="toggleVisiblity(2)" alt="">
+            </div>
+            <p id="2" class="hide text-xs my-3 hidden">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+            <hr>
+            </div>
+            <div class="w-[80%] ">
+            <div class="mb-2 hover:text-[#f47c57] flex flex-row justify-between items-center my-5"><p class="inline-block text-sm">How do I reset my password?
+            </p>  <img class="inline ml-1 cursor-pointer" src="./images/icon-arrow-down.svg" onClick="toggleVisiblity(3)" alt="">
+            </div>
+            <p id="3" class="hide text-xs my-3 hidden">Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</p>
+            <hr>
+            </div>
+            <div class="w-[80%] ">
+            <div class="mb-2 hover:text-[#f47c57] flex flex-row justify-between items-center my-5"><p class="inline-block text-sm">Can I cancel my subscription?
+            </p>  <img class="inline ml-1 cursor-pointer" src="./images/icon-arrow-down.svg" onClick="toggleVisiblity(4)" alt="">
+            </div>
+            <p id="4" class="hide text-xs my-3 hidden">Yes! Send us a message and we’ll process your request no questions asked</p>
+            <hr>
+            </div>
+            <div class="w-[80%] ">
+            <div class="mb-2 hover:text-[#f47c57] flex flex-row justify-between items-center my-5"><p class="inline-block text-sm">Do you provide additional support?
+            </p>  <img class="inline ml-1 cursor-pointer" src="./images/icon-arrow-down.svg" onClick="toggleVisiblity(5)" alt="">
+            </div>
+            <p id="5" class="hide text-xs my-3 hidden">Chat and email support is available 24/7. Phone lines are open during normal business hours</p>
+            <hr>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
